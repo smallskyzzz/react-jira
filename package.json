@@ -49,10 +49,12 @@
     "lint-staged": "^12.1.2",
     "prettier": "2.5.1"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
-    "src/**/*.{js,ts,tsx}": [
-      "npm run lint",
-      "git add"
-    ]
+    "*.{js,css,md,ts,tsx}": "prettier --write"
   }
 }
