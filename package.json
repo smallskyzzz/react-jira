@@ -1,5 +1,5 @@
 {
-  "name": "react-jire",
+  "name": "react-jira",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,7 +21,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "json-server": "json-server __json_server_mock__/db.json --watch"
   },
   "eslintConfig": {
     "extends": [
@@ -46,7 +47,8 @@
     "eslint-config-prettier": "^8.3.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.1.2",
-    "prettier": "2.5.1"
+    "prettier": "2.5.1",
+    "json-server": "^0.17.0"
   },
   "husky": {
     "hooks": {
